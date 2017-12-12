@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Assignment 7</title>
+</head>
+<body>
+<h1>Simple Sign-Up Page</h1><br />
+<form action=onsubmit="checkLength()" name="Form1">
+   Email:
+  <input type="text" name="email"  onblur="emailValidation()"/><span id="email_vm" style="color:#F36;"></span>
+  <br><br>
+  Username:
+  <input type="text" name="username" onblur="ordinaryValidation1()"><span id="username_vm" style="color:#F36;"></span>
+  <br><br>
+  Password:
+  <input type="password" id="password1" onblur="ordinaryValidation2()"><span id="password1_vm" style="color:#F36;"></span>
+  <br><br>
+  Password Confirmation:
+  <input type="password" id="password2"onblur="checkPass()" ><span id="password2_vm" style="color:#F36;"></span>
+  <br><br>
+  <input type="submit" value="Sign-Up">
+</form>
+ <script src="js/main.js"></script>
+</body>
+</html>
